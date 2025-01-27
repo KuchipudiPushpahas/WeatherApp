@@ -14,7 +14,7 @@ protocol NetworkManagerProtocol {
 }
 
 class NetworkManager: NetworkManagerProtocol {
-    private let apiKey = "9ca465f5c8109f88e611cce3750d73c0"
+    private let apiKey = "YOUR_API_TOKEN_HERE"
     
     func getWeather(for city: String) -> AnyPublisher<WeatherData, Error> {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
